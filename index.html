@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Demonstração de Transição</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #2c3e50;
+            font-family: sans-serif;
+            text-align: center;
+            color: white;
+            margin: 0;
+            overflow: hidden; /* Para evitar barras de rolagem desnecessárias */
+        }
+        .btn {
+            background-color: #3498db;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            margin: 10px;
+            display: inline-block;
+        }
+        .btn-com-transition {
+            transition: background-color 0.4s ease, transform 0.4s ease;
+        }
+        .btn:hover {
+            background-color: #f1c40f;
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <h2>Compare o Efeito!</h2>
+    <p>Passe o mouse sobre os botões abaixo.</p>
+
+    <a href="#" class="btn btn-sem-transition">Sem Transição</a>
+    <a href="#" class="btn btn-com-transition">Com Transição</a>
+</body>
+</html>
